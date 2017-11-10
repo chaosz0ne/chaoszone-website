@@ -12,6 +12,6 @@ welcome. Meet us at our Assembly at 34C3.
 
 The latest posts here are:
 
-$partial("templates/post-list.md")$ blabla
+$partial("templates/post-list.md")$
 
 and there are even more in the [archive](/archive.html).
