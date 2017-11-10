@@ -62,7 +62,7 @@ main = do
             posts <- fmap (take 5) . recentFirst =<< loadAll "site/posts/*"
             let indexCtx = listField "posts" postCtx (return posts) <>
                     constField "title" "Home" <>
-                    defaultContext
+                    defaultCtx
             getResourceBody
               >>= applyAsTemplate indexCtx
               >>= renderPandoc
