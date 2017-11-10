@@ -13,4 +13,5 @@ We aim to provide a comfy coding space with lots of collaboration, information
 and knowledge sharing.
 
 I am nek0, the main curator of this site and I will be also present at the
-congress. I am looking forward to seeing all of you.
+congress. I am looking forward to seeing all of you and wish you a pleasant time
+until then.
