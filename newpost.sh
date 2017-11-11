@@ -28,7 +28,7 @@ function main {
 	done
 	postname="./site/posts/$date-${title// /-}.md"
 	echo -e "---\ntitle: ${title}\nauthor: ${author}\ndescription: \n---" >> $postname
-	vim $postname
+	${VISUAL:-vim} $postname
 }
 
 main
