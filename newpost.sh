@@ -1,6 +1,6 @@
 #! /bin/bash
 
-date=$(date --rfc-3339=date)
+date=$(date +%Y-%m-%d)
 title=
 author=
 
