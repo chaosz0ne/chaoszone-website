@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/sh
 
 date=$(date +%Y-%m-%d)
 title=
