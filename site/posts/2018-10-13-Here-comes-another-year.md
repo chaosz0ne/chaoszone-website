@@ -15,4 +15,4 @@ If You want to participate, help or just seek contakt, you can subscribe to the
 mailing list "Zone" at <https://lists.c3d2.de> or join the channel #chaoszone on
 [Hackint](https://hackint.org/).
 
-Hapy hacking until then!
+Happy hacking until then!
