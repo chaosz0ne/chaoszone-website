@@ -2,7 +2,7 @@
 title: About
 ---
 
-ChaosZone is the project to setting up an collaborative Assembly at the 34th
+ChaosZone is the project to setting up an collaborative Assembly at the 35th
 Chaos Communication Congress.
 
 ChaosZone wants to becaome a place - a platform - to unite hackspaces around
