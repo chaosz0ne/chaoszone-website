@@ -139,7 +139,7 @@ postCtx =
 --------------------------------------------------------------------------------
 config :: Configuration
 config = defaultConfiguration
-  { deployCommand = "rsync --del --checksum -arve 'ssh -p 5555 ' _site/* nek0@chelnok.de:/home/nek0/www/chaoszone"
+  { deployCommand = "rsync --del --checksum -arve 'ssh -p 5555 ' _site/* chaoszone@chelnok.de:/home/chaoszone/www/chaoszone"
   }
 
 --------------------------------------------------------------------------------
