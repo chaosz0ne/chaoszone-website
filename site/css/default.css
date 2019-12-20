@@ -1,13 +1,13 @@
 body {
-    color: black;
-    font-family: 'CMUTypewriter';
-    font-size: 23px;
-    font-weight: normal;
-    font-style: normal;
-    padding: 0 2rem 0;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  color: black;
+  font-family: 'CMUTypewriter';
+  font-size: 23px;
+  font-weight: normal;
+  font-style: normal;
+  padding: 0 2rem 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 body::before {
@@ -18,155 +18,155 @@ body::before {
   bottom: 0;
   left: 0;
   right: 0;
-    background-color: #800000;
-    background-image: linear-gradient(to bottom, rgba(128,0,0,0.9) 0%,rgba(128,0,0,0.9) 100%), url(/images/Chaoszone.black.svg);
-    background-size: contain;
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-    background-position: center;
+  background-color: #800000;
+  background-image: linear-gradient(to bottom, rgba(128,0,0,0.9) 0%,rgba(128,0,0,0.9) 100%), url(/images/Chaoszone.black.svg);
+  background-size: contain;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-position: center;
 }
 
 header {
-    border-bottom: 2px solid white;
-    margin-bottom: 30px;
-    padding: 12px 0px 12px 0px;
-    font-family: 'CMUTypewriter';
-    font-size: 30px;
-    margin-left: 25rem;
+  border-bottom: 2px solid white;
+  margin-bottom: 30px;
+  padding: 12px 0px 12px 0px;
+  font-family: 'CMUTypewriter';
+  font-size: 30px;
+  margin-left: 25rem;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'CMUTypewriter';
+  font-family: 'CMUTypewriter';
 }
 
 a {
-    color: #ccc000;
-    text-decoration: none;
+  color: #ccc000;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #aaa000;
-    text-decoration: underline
+  color: #aaa000;
+  text-decoration: underline
 }
 
 #logo, #logo img {
-    max-width: 23rem;
+  max-width: 23rem;
 }
 
 #logo {
-    position: fixed;
-    padding-top: 1rem;
+  position: fixed;
+  padding-top: 1rem;
 }
 
 div#logo a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 nav {
-    display: inline-block;
+  display: inline-block;
 }
 
 nav ul{
-    text-align: left;
-    list-style: none;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
+  text-align: left;
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
-    display: inline-block;
+  display: inline-block;
 }
 
 nav li a {
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 12px;
-    text-decoration: none;
-    text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 nav li a:first-child {
-    margin: 0;
+  margin: 0;
 }
 
 article {
-    margin-left: 25rem;
+  margin-left: 25rem;
 }
 
 article img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 footer {
-    border-top: solid 2px white;
-    font-size: 12px;
-    margin-top: 30px;
-    padding: 12px 0px 12px 0px;
-    text-align: right;
+  border-top: solid 2px white;
+  font-size: 12px;
+  margin-top: 30px;
+  padding: 12px 0px 12px 0px;
+  text-align: right;
 }
 
 h1 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 div.info {
-    font-size: 14px;
-    font-style: italic;
+  font-size: 14px;
+  font-style: italic;
 }
 
 .pagination {
-    display: inline-block;
-    width: 100%
+  display: inline-block;
+  width: 100%
 }
 
 .wrapper {
-    flex: 1;
+  flex: 1;
 }
 
 .left, .right {
-    display: inline-block;
-    fill: curentColor;
+  display: inline-block;
+  fill: curentColor;
 }
 
 .left {
-    float: left;
-    margin-left: 10%;
+  float: left;
+  margin-left: 10%;
 }
 
 .right {
-    float: right;
-    margin-right: 10%;
+  float: right;
+  margin-right: 10%;
 }
 
 .left svg, .right svg {
-    margin-bottom: -3px;
-    margin-left: 0.8ex;
-    margin-right: 0.8ex;
+  margin-bottom: -3px;
+  margin-left: 0.8ex;
+  margin-right: 0.8ex;
 }
 
 #yacs {
-    width: 100%
+  width: 100%
 }
 
 .page img {
-    width: 100%
+  width: 100%
 }
 
 .authors_comments {
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 0 1em 0;
-    background-color: #454545;
-    box-shadow: 5px 5px 5px #ffffff;
-    margin: 2em 0 2em;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0 1em 0;
+  background-color: #454545;
+  box-shadow: 5px 5px 5px #ffffff;
+  margin: 2em 0 2em;
 }
 
 @media screen and (max-width: 750px){
