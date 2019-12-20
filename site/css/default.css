@@ -5,6 +5,7 @@ body {
   font-weight: normal;
   font-style: normal;
   padding: 0 2rem 0;
+  margin: 0;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -104,7 +105,6 @@ article img {
 footer {
   border-top: solid 2px white;
   font-size: 12px;
-  margin-top: 30px;
   padding: 12px 0px 12px 0px;
   text-align: right;
 }
