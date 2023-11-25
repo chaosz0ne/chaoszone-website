@@ -41,15 +41,9 @@ main = do
         route   myRoute
         compile compressCssCompiler
 
-    -- match "site/css/*.scss" $ do
-    --     route   $ myRoute `composeRoutes` setExtension "css"
-    --     compile $ fmap compressCss <$> sassCompiler
-
     match (fromList ["site/about.md", "site/contact.md"]) $ do
         route   $ myRoute `composeRoutes` setExtension "html"
         compile $ do
-            -- firstUrl <- return . fromMaybe "" =<< getRoute (head is)
-            -- latestUrl <- return . fromMaybe "" =<< getRoute (last is)
             pandocCompiler
                 >>= loadAndApplyTemplate "templates/default.html"
                         -- (menuCtx firstUrl latestUrl)
@@ -83,8 +77,6 @@ main = do
     create ["archive.html"] $ do
         route idRoute
         compile $ do
-            -- firstUrl <- return . fromMaybe "" =<< getRoute (head is)
-            -- latestUrl <- return . fromMaybe "" =<< getRoute (last is)
             posts <- recentFirst =<< loadAll "site/posts/*"
             let archiveCtx =
                     listField "posts" postCtx (return posts) <>
@@ -104,8 +96,6 @@ main = do
     paginateRules pages $ \num pat -> do
         route   $ myRoute `composeRoutes` setExtension "html"
         compile $ do
-            -- firstUrl <- fmap ('/' :) . return . fromMaybe "" =<< getRoute (head is)
-            -- latestUrl <- fmap ('/' :) . return . fromMaybe "" =<< getRoute (last is)
             ident <- getUnderlying
             title <- getMetadataField' ident "title"
             url   <- return . fromMaybe "" =<< getRoute ident
@@ -119,16 +109,6 @@ main = do
             loadAndApplyTemplate "templates/default.html"
               defaultCtx full
                 >>= relativizeUrls
-
-    -- create ["index.html"] $ do
-    --     route idRoute
-    --     compile $ do
-    --         post <- fmap head . recentFirst =<< (loadAll "site/posts/*" :: Compiler [Item String])
-    --         let indexCtx =
-    --                 constField "date" "%B %e, %Y" <>
-    --                 defaultCtx
-    --         makeItem (itemBody post)
-    --             >>= relativizeUrls
 
 --------------------------------------------------------------------------------
 
