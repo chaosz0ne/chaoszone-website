@@ -185,15 +185,20 @@ div.info {
 }
 
 @media screen and (max-width: 750px){
+  body {
+    grid-template-columns: [maincol] auto;
+    grid-template-rows: [logorow] 20rem [headerrow] 6rem [mainrow] auto [footerrow] 2rem;
+    grid-template-areas:
+      "logo"
+      "header"
+      "main"
+      "footer";
+  }
   #logo {
     position: initial;
   }
 
   #logo img {
     max-width: 100%;
-  }
-
-  article, header {
-    margin: 0;
   }
 }
