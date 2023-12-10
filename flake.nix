@@ -27,7 +27,8 @@
         devShell = haskellPackages.shellFor {
           packages = p: [ defaultPackage ];
           withHoogle = true;
-          buildInputs = with haskellPackages; [
+          buildInputs = with haskellPackages; with pkgs; [
+            vim
             haskell-language-server
             ghcid
             cabal-install
