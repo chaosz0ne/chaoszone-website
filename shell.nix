@@ -1,20 +1,14 @@
-{ pkgs ? import <nixpkgs> {}, chaoszone ? null}:
+{ pkgs ? import <nixpkgs> {}
+, chaoszone ? import ./default.nix { inherit pkgs; packageName = "chaoszone"; }
+}:
 
-let
-  chaoszone_cz = if isNull chaoszone
-    then
-      (import ./default.nix {inherit pkgs; packageName = "chaoszone";})
-    else
-      chaoszone;
-  gitignore = dir: pkgs.nix-gitignore.gitignoreSource [] dir;
-in
-  pkgs.haskellPackages.shellFor {
-    packages = p: [ chaoszone_cz ];
-    withHoogle = true;
-    buildInputs = with pkgs.haskellPackages; with pkgs; [
-      haskell-language-server
-      ghcid
-      cabal-install
-      vim
-    ];
-  }
+pkgs.haskellPackages.shellFor {
+  packages = p: [ chaoszone ];
+  withHoogle = true;
+  buildInputs = with pkgs.haskellPackages; with pkgs; [
+    haskell-language-server
+    ghcid
+    cabal-install
+    vim
+  ];
+}

@@ -1,4 +1,6 @@
-{ pkgs ? import <nixpkgs> {}, self ? ./., packageName ? "chaoszone" }:
+{ pkgs ? import <nixpkgs> {}
+, self ? ./., packageName ? "chaoszone"
+}:
 let
   gitignore = dir: pkgs.nix-gitignore.gitignoreSource [] dir;
 in
