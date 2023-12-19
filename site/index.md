@@ -1,16 +1,12 @@
 ---
-title: Under Construction
+title: ChaosZone
 ---
-
-## /!\\ Codeworks ahead /!\\
 
 Hello there!
 
-As the 37th Chaos Communication Congress draws nearer a greater overhaul of this page is in order.
+Here you will find more information on ChaosZone and its member hackerspaces.
 
-Come back soon for more Information on ChaosZone and its member hackerspaces.
-
-Posts from previous years:
+Our recent Posts:
 
 $partial("templates/post-list.html")$
 
