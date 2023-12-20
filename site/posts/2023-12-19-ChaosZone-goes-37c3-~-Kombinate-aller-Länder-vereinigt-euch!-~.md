@@ -31,6 +31,6 @@ Feel free to come by! A more exact location will be announced later via [Mastodo
 
 ## česky
 Některé z bytostí Chaoszone se zúčastní letošního [kongresu](https://events.ccc.de/category/37c3/) Chaos Computer Clubu v Hamburgu.
-Budeme tam mít shromaždiště s několika stoly, židlemi a malým workshopovým koutkem! :)
+Budeme tam mít prostor s několika stoly, židlemi a malým workshopovým koutkem! :)
 Pokud vše vyjde, budeme tam mít také stroj na slushie, stroj na placky a budeme vyrábět živě slushie a placky. ^^
 Neváhejte a přijďte! Přesnější místo oznámíme později prostřednictvím [Mastodonu](https://chaos.social/@chaoszone).
