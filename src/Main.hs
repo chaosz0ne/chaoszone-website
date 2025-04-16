@@ -29,7 +29,7 @@ main = do
     match "templates/*" $ compile templateBodyCompiler
 
     match
-      (    "site/images/*"
+      (    "site/images/**"
       .||. "site/fonts/**"
       .||. "site/humans.txt"
       .||. "site/robots.txt"
