@@ -1,7 +1,33 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 
-<h1>{{ .Title }}</h1>
+<section class="container">
 
-{{ .Content }}
+    <h1>{{ .Title }}</h1>
 
-{{ partial "footer.html" . }}
+    {{ if or (isset .Params "author") (isset .Params "date") }}
+        <div class="subline">
+        {{ with .Date }}
+            <time datetime="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+            {{ .Format "January 2, 2006" }}
+            </time>
+        {{ end }}
+
+        {{ if isset .Params "author" }}
+            by {{ .Params.author }}
+        {{ end }}
+        </div>
+    {{ end }}
+            
+    {{ .Content }}
+
+</section>
+
+
+    {{ with .Resources.GetMatch "_gallery.md" }}
+        <section class="container image-gallery">{{ .Content }}</section>
+    {{ end }}
+
+
+
+
+{{ end }}

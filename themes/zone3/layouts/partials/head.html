@@ -3,9 +3,9 @@
 
 <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 
-<link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+<link rel="stylesheet"  type="text/css" media="all" href="{{ "css/style.css" | relURL }}">
 
-<link rel="icon" type="image/svg+xml" href="/img/Chaoszone.svg" />
+<link rel="icon" type="image/svg+xml" href="{{"/img/favicon.svg"| relURL }}" />
 
 {{ with .OutputFormats.Get "rss" -}} {{ printf `
 <link rel="%s" type="%s" href="%s" title="%s" />

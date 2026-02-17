@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://temp.falk-m.de/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'ChaosZone'
 
 [[menus.main]]
 name = 'Home'
@@ -9,15 +9,15 @@ weight = 10
 
 [[menus.main]]
 name = 'Members'
-pageRef = ''
+pageRef = '/members'
 weight = 20
 
 [[menus.main]]
 name = 'Projects'
-pageRef = ''
+pageRef = '/projects'
 weight = 20
 
-[[menus.main]]
+[[menus.main_future]]
 name = 'Events'
 pageRef = ''
 weight = 20

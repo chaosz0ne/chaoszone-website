@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<h2>Pong</h2>
+    
+<section class="red">
+  <div class="container">
+    <pong-game></pong-game>    
+  </div>
+</section>
+
+<h2>Poly Play</h2>
+
+<section class="red">
+  <div class="container">
+    <poly-play-game></poly-play-game>  
+  </div>
+</section>
+
+<p></p>
+
+<script src={{ "js/pong-game.js" | relURL }}></script>
+<script src={{ "js/poly-play-game.js" | relURL }}></script>
+
+{{ end }}

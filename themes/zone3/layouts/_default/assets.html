@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+
+<section class="container">
+
+  <h1>{{ .Title }}</h1>
+    {{ .Content }}
+
+    <div class="assets__list">
+
+    {{ range.Data.Pages }}
+
+        {{ $subPage := . }}
+
+        {{ $files := .Resources.Match "file" }}
+
+        {{ range $files }}
+
+             <div class="assets__item">
+
+                {{ $preview := $subPage.Resources.Get .Params.preview}}
+                {{ $original := . }}
+                {{ $size := (os.Stat (path.Join "public" $original.RelPermalink)).Size }}
+                {{ $type := $original.MediaType }}
+
+                {{ with $preview }}
+                        <img src="{{ .RelPermalink}}" width="{{ .Width }}" height="{{ .Height }}">
+                {{ end }}
+
+                 <div class="assets__item__space"></div>
+
+                <strong> {{ $original.Title }}</strong>
+
+                <span>{{ $type }} - {{ div $size 1028 }} kb</span> <br>
+               
+                <a target="_blank" href="{{ $original.RelPermalink }}">Download</a>
+            </div>
+        {{ end }}
+           
+    
+        {{ end }}
+
+        <div class="assets__item"></div>
+        <div class="assets__item"></div>
+  </div>
+
+</section>
+{{ end }}

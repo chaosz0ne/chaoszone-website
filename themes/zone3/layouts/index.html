@@ -1,24 +1,17 @@
 {{ define "main" }}
-    
-<section class="red">
-  <div class="container">
-    <pong-game></pong-game>    
-  </div>
-</section>
 
 <section class="container">
   <h1>{{ .Title }}</h1>
 
   {{ .Content }} 
-  </div>
 </section>
 
 <section class="container">
   <h1>News</h1>
-  {{ $subpage := site.GetPage "news" }}
+  {{ $subpage := site.GetPage "posts" }}
   {{ with $subpage.Pages }}
   <ul class="news-list">
-    {{ range . }}
+    {{ range first 3 . }}
       <li>
         <a href="{{ .RelPermalink }}">
           <span>{{ .Date.Format "2006-01-02" }}</span>
@@ -28,7 +21,7 @@
   </ul>
   {{ end }}
 
-  <a href="#">news archiv >>></a>
+  <a href="/posts">news archiv >>></a>
 </section>
 
 <section>

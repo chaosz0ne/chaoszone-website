@@ -153,9 +153,16 @@ class ChaosMap extends HTMLElement {
             <div id="map"></div>
         `;
 
-        setTimeout(() => {
-            this.initMap();
-        }, 500);
+        const waitForMaplibre = () => {
+            if (window.maplibregl) {
+                this.initMap();
+            } else {
+                setTimeout(waitForMaplibre, 100);
+            }
+        };  
+
+        waitForMaplibre();
+         
     }
 
     async initMap() {

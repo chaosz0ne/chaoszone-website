@@ -1,0 +1,4 @@
++++
+title = 'Assets'
+layout = 'assets'
++++

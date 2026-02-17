@@ -5,7 +5,7 @@
   </head>
 
   <body>
-
+    <div class="body">
     {{ partial "header.html" . }}
 
     <main>
@@ -13,9 +13,8 @@
     </main>
     
     {{ partial "footer.html" . }}
-
-    <script src="./js/pong-game.js"></script>
-    <script src="./js/map.js"></script>
-    <script src="./js/script.js"></script>
+    </div>
+    <script src={{ "js/map.js" | relURL }}></script>
+    <script src={{ "js/script.js" | relURL }}></script>
   </body>
 </html>

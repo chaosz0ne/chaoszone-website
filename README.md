@@ -15,12 +15,18 @@ The source files for the <https://chaoszone.cz> website.
 
 ## todo
 
-- eigene cursor und menü hover
-  - inspiration: https://eloyb.design/
 - ascii art: https://designs.events.ccc.de/Hackover_2017/Hackover_2017-Visual.png
 - play section
   - game of live
   - raindrop: https://experiments.p5aholic.me/day/005/
-  - pong: https://designs.events.ccc.de/GPN8/GPN8-Visual.png
-  - poly play: https://www.gugeli.de/2025/08/12/poly-play-der-einzige-arcade-automat-der-ddr-und-wie-man-ihn-heute-emuliert/
-- matrix link im footer zu eigener unterseite mit beschreibung
+  - pong
+  - space invader: https://designs.events.ccc.de/GPN8/GPN8-Visual.png
+  - poly play: Wasserleck https://flashmuseum.org/poly-play/
+  - alien attack: https://www.asciiart.eu/ascii-games/minigames
+- subpages
+  - projects
+    - cookbook
+    - Bezirksschilder
+    - sampler
+    - E-Paper ink
+  - events

@@ -1,0 +1,70 @@
+{{ define "main" }}
+
+<section class="container">
+
+    <h1>{{ .Title }}</h1>
+            
+    {{ .Content }}
+
+    {{ $data := dict }}
+    {{ $url := "https://map.chaoszone.cz/spaceapi" }}
+    {{ with try (resources.GetRemote $url) }}
+    {{ with .Err }}
+        {{ errorf "%s" . }}
+    {{ else with .Value }}
+        {{ $data = . | transform.Unmarshal }}
+    {{ else }}
+        {{ errorf "Unable to get remote resource %q" $url }}
+    {{ end }}
+    {{ end }}
+
+    <div class="members-list">
+    {{ range $data }} 
+
+        <div class="members-list__member">
+
+            {{ if isset .data "logo" }}
+             {{ $image := resources.GetRemote .data.logo }}
+                 <div class="member_logo_wrapper" style="--image-url: url('{{ $image.RelPermalink }}');">
+                    <img src="{{ $image.RelPermalink }}" alt="Logo of {{ .data.name }}">
+                 </div>
+            {{ end }}
+
+
+
+            <span class="member__title">{{ .data.space }}</span>
+
+            {{ if isset .data.location "address" }}
+                <div class="member_address"><span class="member__icon member__icon__house"></span> {{ .data.location.address }}</div>
+            {{ end }}
+
+            {{ if isset .data.contact "email" }}
+                <div class="member_email"><span class="member__icon member__icon__email"></span> {{ replace .data.contact.email "@" "[at]"}}</div>
+            {{ end }}
+
+            {{ if isset .data.contact "phone" }}
+                <div class="member_phone"><span class="member__icon member__icon__phone"></span> {{ .data.contact.phone }}</div>
+            {{ end }}
+
+            {{ if isset .data.contact "matrix" }}
+                <div class="member_matrix"><span class="member__icon member__icon__matrix"></span> {{ .data.contact.matrix }}</div>
+            {{ end }}
+
+            {{ if isset .data.contact "mastodon" }}
+                <div class="member_mastodon"><span class="member__icon member__icon__mastodon"></span> {{ .data.contact.mastodon }}</div>
+            {{ end }}
+
+            <div class="member_space"></div>
+
+            <a class="member_website" target="_blank" href="{{ .data.url }}">go to Website</a>       
+
+        </div>
+    
+    {{ end }}
+        <div></div>  <div></div>
+    </div>
+
+</section>
+
+
+{{ end }}
