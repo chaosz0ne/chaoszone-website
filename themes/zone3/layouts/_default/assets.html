@@ -20,7 +20,6 @@
 
                 {{ $preview := $subPage.Resources.Get .Params.preview}}
                 {{ $original := . }}
-                {{ $size := (os.Stat (path.Join "public" $original.RelPermalink)).Size }}
                 {{ $type := $original.MediaType }}
 
                 {{ with $preview }}
@@ -31,7 +30,7 @@
 
                 <strong> {{ $original.Title }}</strong>
 
-                <span>{{ $type }} - {{ div $size 1028 }} kb</span> <br>
+                <span>{{ $type }}</span> <br>
                
                 <a target="_blank" href="{{ $original.RelPermalink }}">Download</a>
             </div>
