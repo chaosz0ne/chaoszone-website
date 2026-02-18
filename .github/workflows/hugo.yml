@@ -58,4 +58,4 @@ jobs:
         run: "rclone sync ./hugo-site :webdav,env:chaoszone.cz -v"
         env:
           RCLONE_WEBDAV_URL: "https://dav.eigenbaukombinat.de"
-          RCLONE_WEBDAV_USER: "github"
+          RCLONE_WEBDAV_USER: "githubcz"
