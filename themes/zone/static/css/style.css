@@ -89,7 +89,7 @@ h1 {
 }
 /** Header and Navigation ###################################################### **/
 
-header {
+.body > header {
   background-color: var(--bg-color);
   border-bottom: 1px solid var(--box-bg);
   font-family: var(--highlight-font);
@@ -531,21 +531,10 @@ poly-play-game {
 .hero-grid {
   display: grid;
   grid-template-columns: 1.12fr 0.88fr;
-  gap: 1rem;
+  gap: clamp(1rem, -0.455rem + 7.27vw, 5rem);
   align-items: stretch;
 }
 
-.card {
-  background: linear-gradient(
-    160deg,
-    color-mix(in srgb, var(--surface) 90%, #fff),
-    var(--surface)
-  );
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: clamp(1rem, 2.4vw, 1.8rem);
-}
 
 article {
   display: block;
@@ -566,10 +555,19 @@ aside {
 }
 
 .stat {
-  background: color-mix(in srgb, var(--surface-2) 88%, transparent);
+   background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--surface) 90%, #fff),
+    var(--surface)
+  );
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   padding: 0.9rem;
+}
+
+.stat strong {
+	display: block;
+	margin-bottom: 1rem;
 }
 
 .actions {
@@ -597,4 +595,10 @@ aside {
 .btn-primary {
     background: linear-gradient(120deg, var(--hl-color), var(--bg-color));
     color: var(--menu-font-color);
+}
+
+@media (orientation: portrait) {
+    .hero-grid, .two-col, .link-grid, .news-list {
+        grid-template-columns: 1fr;
+    }
 }
