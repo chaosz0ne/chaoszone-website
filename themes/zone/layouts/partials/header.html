@@ -1,24 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<header>
+  <div class="container">
+    <a class="logo" href="/">
+      Chaos <img src="{{ "img/Chaoszone.svg" | relURL }}" />Zone
+    </a>
+    <nav class="site-nav">
+      <ul class="main-menu">
+        {{ range.Site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>
 
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
-
-	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
-	<link rel="icon" type="image/svg+xml" href="/img/Chaoszone.svg">
-
-
-	{{ with .OutputFormats.Get "rss" -}}
-		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-	{{ end -}}
-
-</head>
-
-<body>
-
-{{ partial "nav.html" . }}
-
-<main class="content">

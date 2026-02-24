@@ -1,7 +1,63 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 
-<h1>{{ .Title }}</h1>
+<section class="hero" id="home">
+      <div class="container hero-grid">
+        <article class="card">
+          <h1>{{ .Title }}</h1>
+          <p class="lead">
+            {{ .Content }} 
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://temp.falk-m.de/matrix" rel="noopener noreferrer">our Matrix Channel</a>
+            <a class="btn btn-secondary" href="https://temp.falk-m.de/posts" rel="noopener noreferrer">news archiv &gt;&gt;&gt;</a>
+          </div>
+        </article>
 
-{{ .Content }}
+        <aside class="card" aria-label="Community overview">
+          <div class="stats">
+            <div class="stat">
+              <strong>Assembly</strong>
+              <span>Chaos Communication Congress and similar events</span>
+            </div>
+            <div class="stat">
+              <strong>Focus</strong>
+              <span>Software, hardware and other hacking topics</span>
+            </div>
+            <div class="stat">
+              <strong>Platform</strong>
+              <span>Hackerspaces from eastern germany and further east</span>
+            </div>
+            <div class="stat">
+              <strong>Culture</strong>
+              <span>Friendly environment for learning from each other</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-{{ partial "footer.html" . }}
+<section class="container">
+  <h1>News</h1>
+  {{ $subpage := site.GetPage "posts" }}
+  {{ with $subpage.Pages }}
+  <ul class="news-list">
+    {{ range first 3 . }}
+      <li>
+        <a href="{{ .RelPermalink }}">
+          <span>{{ .Date.Format "2006-01-02" }}</span>
+          {{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+
+  <a href="/posts">news archiv >>></a>
+</section>
+
+<section>
+  <chaos-map></chaos-map>
+</section>
+
+{{ end }}
+
+
