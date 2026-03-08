@@ -1,7 +1,7 @@
 +++
 title = 'ChaosZone is the project to setting up a collaborative assembly.'
 date = 2025-06-01T22:39:26+02:00
-draft = true
+draft = false
 +++
 
 ChaosZone wants to become a place – a platform – to unite hackerspaces from eastern germany and further east.
