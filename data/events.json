@@ -1,0 +1,44 @@
+[
+    {
+        "title": "\"HaGeWe\" - Geekend im Eigenbaukombinat Halle",
+        "date_from": "2026-03-21",
+        "date_to": "2026-03-21",
+        "url": "https://eigenbaukombinat.de/hagewe26-tickets/"
+    },
+    {
+        "title": "Chemnitzer Linux Tage",
+        "date_from": "2026-03-28",
+        "date_to": "2026-03-29",
+        "url": "https://chemnitzer.linux-tage.de/2026/de"
+    }, 
+    {
+        "title": "\"MaiSpace\" - Geekend in Potsdam",
+        "date_from": "2026-04-22",
+        "date_to": "2026-04-24",
+        "url": "https://www.ccc-p.org/"
+    }, 
+    {
+        "title": "ChaosZeltZone - Gemeinsames Camping",
+        "date_from": "2026-08-19",
+        "date_to": "2026-08-23",
+        "url": "https://thereisno.camp/"
+    }, 
+    {
+        "title": "Inselchaos - Veranstaltungswochenende auf Rügen",
+        "date_from": "2026-09-05",
+        "date_to": "2026-09-06",
+        "url": "https://www.inselchaos.de/"
+    }, 
+    {
+        "title": "Datenspuren Dresden",
+        "date_from": "2026-09-18",
+        "date_to": "2026-09-20",
+        "url": "https://datenspuren.de/2026/"
+    }, 
+    {
+        "title": "Interfug Chemnitz",
+        "date_from": "2026-10-10",
+        "date_to": "2026-10-11",
+        "url": "https://interfug.de/"
+    }
+]

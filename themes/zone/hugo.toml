@@ -17,9 +17,9 @@ name = 'Projects'
 pageRef = '/projects'
 weight = 20
 
-[[menus.main_future]]
+[[menus.main]]
 name = 'Events'
-pageRef = ''
+pageRef = '/events'
 weight = 20
 
 [module]

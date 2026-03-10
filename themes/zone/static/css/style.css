@@ -602,3 +602,16 @@ aside {
         grid-template-columns: 1fr;
     }
 }
+
+.events {
+  margin-top: 5rem;;
+}
+
+.event {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.event span {
+  width: 13rem;
+}

@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<section class="container">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  <div class="events"></div>
+  {{ range $item := $.Site.Data.events }}
+    {{ $t := $item.date_from }}
+    {{ $t = time.AsTime $t }}
+    {{ if gt  $t now}}
+    <div class="event">
+        <span>
+        {{ if eq $item.date_from $item.date_to }}
+            {{ $item.date_from }}
+        {{ else }}
+            {{ $item.date_from }} - {{ $item.date_to }}
+        {{ end }}
+        </span>
+        <a href="{{ $item.url }}">{{ $item.title }}</a>
+        {{ end }}
+    </div>
+  {{ end }}
+  </div>
+</section>
+{{ end }}
