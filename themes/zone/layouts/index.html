@@ -54,6 +54,41 @@
   <a href="/posts">news archiv >>></a>
 </section>
 
+<section class="container" style="margin-bottom: 3rem">
+  <h1>upcomming events</h1>
+
+  <div class="events home_events">
+    {{ $shown_events := 0 }}
+    {{ range $item := $.Site.Data.events }}
+      {{ $t := $item.date_from }}
+      {{ $t = time.AsTime $t }}
+      {{ if gt  $t now}}
+        {{ $shown_events = add $shown_events 1 }}
+        {{ if le $shown_events 3 }}
+        <div class="stat event" data-date="{{ $t }}">
+            <span>
+            {{ $item.date_from }}
+            </span>
+            <a href="{{ $item.url }}">{{ $item.title }}</a>
+         </div>
+            {{ end }}
+      {{ end }}
+    {{ end }}
+  
+  </div>
+  <a href="/events">events >>></a>
+  <script>
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const date = new Date(event.dataset.date);
+        const now = new Date();
+        if (date < now) {
+            event.style.display = 'none';
+        }
+    });
+</script>
+</section>
+
 <section>
   <chaos-map></chaos-map>
 </section>

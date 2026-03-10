@@ -604,14 +604,25 @@ aside {
 }
 
 .events {
-  margin-top: 5rem;;
+  margin-top: 1rem;
 }
 
 .event {
   display: flex;
+  flex-wrap: wrap;;
   margin-bottom: 1rem;
 }
 
 .event span {
-  width: 13rem;
+  width: 13em;
+}
+
+.home_events .event span {
+  width: 7em;
+}
+
+@media (orientation: portrait) {
+  .event {
+    flex-direction: column;
+  }
 }

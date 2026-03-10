@@ -4,12 +4,12 @@
   <h1>{{ .Title }}</h1>
   {{ .Content }}
 
-  <div class="events"></div>
+  <div class="events">
   {{ range $item := $.Site.Data.events }}
     {{ $t := $item.date_from }}
     {{ $t = time.AsTime $t }}
     {{ if gt  $t now}}
-    <div class="event">
+    <div class="stat event" data-date="{{ $t }}">
         <span>
         {{ if eq $item.date_from $item.date_to }}
             {{ $item.date_from }}
@@ -18,9 +18,20 @@
         {{ end }}
         </span>
         <a href="{{ $item.url }}">{{ $item.title }}</a>
-        {{ end }}
-    </div>
+        </div>
+    {{ end }}
   {{ end }}
   </div>
+  <script>
+    const events = document.querySelectorAll('.event');
+    events.forEach(event => {
+        const date = new Date(event.dataset.date);
+        const now = new Date();
+        if (date < now) {
+            event.style.display = 'none';
+        }
+    });
+</script>
 </section>
 {{ end }}
+
