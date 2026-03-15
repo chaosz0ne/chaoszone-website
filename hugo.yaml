@@ -2,3 +2,7 @@ baseURL: https://chaoszone.cz/
 languageCode: en-us
 title: ChaosZone
 theme: zone
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
