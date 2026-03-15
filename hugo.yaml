@@ -16,4 +16,4 @@ mediaTypes:
 outputFormats:
   RSS:
     mediaType: "application/rss"
-    baseName: "feed"
+    baseName: "rss"
