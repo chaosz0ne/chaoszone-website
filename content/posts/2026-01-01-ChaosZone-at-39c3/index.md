@@ -1,6 +1,7 @@
 +++
 title = '39c3 Diary Entries'
 date = 2026-01-01T22:39:26+02:00
+author = 'blaudioslave'
 +++
 
 

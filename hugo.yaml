@@ -6,3 +6,14 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+outputs:
+  home:
+      - HTML
+      - RSS
+mediaTypes:
+  application/rss:
+    suffixes: ["xml"]
+outputFormats:
+  RSS:
+    mediaType: "application/rss"
+    baseName: "feed"
