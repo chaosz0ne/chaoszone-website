@@ -1,74 +1,76 @@
 +++
-title = '39c3 Diary Entries'
+title = 'Tagebucheinträge 39c3'
 date = 2026-01-01T22:39:26+02:00
 author = 'blaudioslave'
 +++
 
 
-## October 30, 2025
+## 30.10.2025
 
-We’re meeting for our first official planning session of the year via Jitsi Meet.
-We’re brainstorming ideas: 
-We plan to make buttons, 
-rebuild the pixel flood and flipdot displays, 
-and set up an info table for the data tracks and the ChaosZone in general.
-PCBs, OpenLED race, decorative projector, arcade machine with Polyplay games,
-Hugo phone game,...
+Wir treffen uns zum ersten offiziellen Planungstreffen für dieses Jahr in einem Jitsi-Meet.    
+Wir sammeln Ideen:     
+Buttons sollen gemacht werden,     
+Pixelflut und Flipdot-Displays wieder aufgebaut,     
+einen Info-Tisch für die Datenspuren und die ChaosZone allgemein.    
+Leiterplatten, openLED-Race, Deko-Beamer, Arcade-Machine mit Polyplay-Spielen,    
+Hugo-Telefon-Spiel,...
 
-Don’t forget the district signs!
-Get more people from the ChaosZone involved in organizational tasks!
+Bezirksschilder nicht vergessen!    
+Mehr Leute aus der ChaosZone für Orga-Dinge aktivieren!
 
-## November 6, 2025
+## 06.11.2025
 
-Second meeting. The first rounds of vouchers are done.
-Assemblies are slowly being set up and a list of participants has been started.
-We’re asking Møbelhaus for sofas. We’d like an extra info table.
-And we’ve decided to use the red umbrellas as decorations again.
+Zweites Treffen. Die ersten Voucher-Runden sind durch.    
+Assemblies werden langsam angelegt und eine Liste der Teilnehmenden angefangen.    
+Wir fragen das Møbelhaus nach Sofas. Wünschen uns einen extra Info-Tisch.    
+Und entscheiden uns auch wieder die roten Schirme als Deko nutzen zu wollen.
 
-## November 13, 2025
+## 13.11.2025
 
-Only a few people in the org Jitsi.
-We go over a few points from the last meeting.
+Nur wenige Leute im Orga-Jitsi.    
+Wir arbeiten einige Punkte des letzten Treffens ab.
 
-## November 20, 2025
+## 20.11.2025
 
-Unfortunately, we can’t get any sofas from the furniture store,
-but we want shelves for extra swap space. An email goes out to the LOC.
+Bekommen leider keine Sofas vom Møbelhaus,    
+wollen aber Regale für extra Swap-Space. E-Mail geht raus ans LOC.
 
-## November 27, 2025
+## 27.11.2025
 
-Potsdam is offering lighting. We’re excited. :)
-Umbrellas have been located and pickup scheduled.
-New ChaosZones T-shirt designs are emerging. An order list is being started.
-We’re planning a balloon arch.
-Sofas maybe from Leipzig?
+Potsdam bietet Beleuchtung an. Wir freuen uns. :)    
+Schirme wurden geortet und die Abholung geplant.    
+Neue ChaosZonen T-shirt-Designs tauchen auf. Eine Bestellliste wird gestartet.    
+Wir planen einen Ballon-Bogen.    
+Sofas vielleicht aus Leipzig?
 
 
-## December 04, 2025
+## 04.12.2025
 
-Participation: low
-No sofas from Leipzig after all, and LOC says no to shelves.
-But a new shelf option pops up.
+Beteiligung: low    
+Doch keine Sofas aus Leipzig und LOC sagt nein zu Regalen.    
+Dafür ploppt neue Regal-Option auf.
 
-## December 18, 2025
+## 18.12.2025
 
-Our big ChaosZones sign is being brought from Chemnitz by the folks from Zwickau.
-We’re thinking about setting up a fax machine and are supposed to get a blackboard.
+Unser großes ChaosZonen-Schild wird aus Chemnitz von den Zwickauern mitgebracht.    
+Wir überlegen ein Faxgerät aufzustellen und sollen eine Tafel bekommen.
 
 ---
 
-## Day 0
-The participants are slowly making their way here.
-Umbrellas are being collected, things are being transported, and everything that’s already here is being set up.
+## Tag 0
+
+Die Wesen machen sich langsam auf den Weg.    
+Schirme werden eingesammelt, Dinge transportiert und alles was schon da is, aufgebaut.
 
 <section class="container image-gallery">
     <img src="71399153-d2ef-4c5d-a9fa-beb2d46b512f.jpeg" />
 </section>
 
-## Day 1
-Almost all the creatures are here now, and it’s a real buzz at our tables. :)
-Highlight: Some of us are up on stage in Hall 1, 
-during the Digital Independence Day presentation. :D
+## Tag 1
+
+Jetzt sind schon fast alle Wesen da und an unseren Tischen wuselt es ordentlich. :)    
+Highlight: Einige von uns sind mit auf der Bühne von Saal 1,     
+während der Vorstellung des Digital Independence Day. :D
 
 <section class="container image-gallery">
     <img src="80b8fbe7-c5e6-4bfb-9ff3-9cae2e365874.jpeg" />
@@ -80,9 +82,10 @@ during the Digital Independence Day presentation. :D
     <img src="e79977ca-8c82-4871-bb06-384c0a1f7467.jpeg" />
 </section>
 
-## Day 2
-Pixelflut is in full swing. Button production has started. 
-Flyers for our camping area—ChaosZeltZone—have been prepared.
+## Tag 2
+
+Pixelflut ist im vollen Gange. Button Produktion wurde gestartet.     
+Flyer für unser Camping - ChaosZeltZone - vorbereitet.
 
 <section class="container image-gallery">
     <img src="1eff108b-2dfe-4fe4-9868-1b3c7d42ab82.jpeg" />
@@ -90,10 +93,11 @@ Flyers for our camping area—ChaosZeltZone—have been prepared.
     <img src="11e3d794-7106-4b20-a473-cb0981fc55ad.jpeg" />
 </section>
 
-## Day 3
-Probably the busiest day of them all. :)
-Everyone is doing everything somehow! :D
-Including a punk rock party in the Engelküche. <3
+## Tag 3
+
+Vermutlich der wuseligste Tag von allen. :)    
+Alle machen alles irgendwie! :D    
+Inklusive Punkrock Party in der Engelküche. <3
 
 <section class="container image-gallery">
     <img src="cc1bfece-3136-4811-962e-6c8d57c53089.jpeg" />
@@ -104,18 +108,19 @@ Including a punk rock party in the Engelküche. <3
 </section>
 
 
-## Day 4
-The hustle and bustle is slowly winding down, but many are still here helping with the takedown.
-I look into many happy but also somewhat overtired faces. ;)
+## Tag 4
+
+Der Wuselfaktor geht langsam zurück, aber viele sind noch da und helfen beim Abbau.    
+Ich schaue in viele fröhliche aber auch etwas übermüdetet Gesichter. ;)        
 #exhaustedbutsmiling
 
 ---
 
-## Debrief
+## Nachbesprechung
 
-The umbrellas and lighting worked great.
-Space allocation wasn’t ideal because some spots were double-booked.
-Still loving the idea of a sofa corner.
-If there’s room, we’d love to set up a mini workshop area.
+Schirme+Licht haben super funktioniert.    
+Platzverteilung war nicht so gut, weil einige Plätze doppelt belegt waren.    
+Still loving the thought of Sofaecke.    
+Wenn Platz, würden wir gerne eine Mini Workshop Area bespielen.
 
-See you next year!... or at one of our smaller events.
+See you next year!... oder zu einem unserer kleineren Events.
