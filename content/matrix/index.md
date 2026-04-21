@@ -24,7 +24,7 @@ Download Element for your device from [https://element.io/get-started](https://e
 
 Once you have Element running, you can join our main channel:
 
-[Join #chaoszone:matrix.eigenbaukombinat.de](https://app.element.io/#/room/#chaoszone:matrix.eigenbaukombinat.de)
+[Join #chaoszone:matrix.eigenbaukombinat.de](https://matrix.to/#/#chaoszone:matrix.eigenbaukombinat.de)
 
 ### Need Help?
 
