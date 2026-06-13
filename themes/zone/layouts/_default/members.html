@@ -24,13 +24,17 @@
         <div class="members-list__member">
 
             {{ if isset .data "logo" }}
-             {{ $image := resources.GetRemote .data.logo }}
-                 <div class="member_logo_wrapper" style="--image-url: url('{{ $image.RelPermalink }}');">
-                    <img src="{{ $image.RelPermalink }}" alt="Logo of {{ .data.name }}">
-                 </div>
+                {{ $name := .data.name }}
+                {{ with try (resources.GetRemote .data.logo) }}
+                    {{ with .Err }}
+                        {{ warnf "Failed to fetch feed: %s" . }}
+                    {{ else with .Value }}
+                        <div class="member_logo_wrapper" style="--image-url: url('{{ .RelPermalink }}');">
+                            <img src="{{ .RelPermalink }}" alt="Logo of {{ $name }}">
+                        </div>
+                    {{ end }}
+                {{ end }}
             {{ end }}
-
-
 
             <span class="member__title">{{ .data.space }}</span>
 
