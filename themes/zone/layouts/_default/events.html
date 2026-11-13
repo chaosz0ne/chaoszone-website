@@ -4,26 +4,51 @@
   <h1>{{ .Title }}</h1>
   {{ .Content }}
 
-  <div class="events">
-  {{ range $item := $.Site.Data.events }}
-    {{ $t := $item.date_from }}
-    {{ $t = time.AsTime $t }}
-    {{ if gt  $t now}}
-    <div class="stat event" data-date="{{ $t }}">
+  <h2>Upcoming Events</h2>
+
+  <div class="events events--current">
+  {{ range sort (where $.Site.Data.events "date_from" "gt" (now.Format "2006-01-02")) "date_from" "asc" }}
+    {{ $dateFrom := time.AsTime .date_from }}
+    {{ $dateTo := time.AsTime .date_to }}
+    <div class="stat event" data-date="{{ $dateFrom.Format "2006-01-02T15:04:05Z07:00" }}">
         <span>
-        {{ if eq $item.date_from $item.date_to }}
-            {{ $item.date_from }}
+        {{ if eq .date_from .date_to }}
+            {{ .date_from }}
         {{ else }}
-            {{ $item.date_from }} - {{ $item.date_to }}
+            {{ .date_from }} - {{ .date_to }}
         {{ end }}
         </span>
-        <a href="{{ $item.url }}">{{ $item.title }}</a>
-        </div>
-    {{ end }}
+        <a href="{{ .url }}">{{ .title }}</a>
+    </div>
+  {{ else }}
+    <p>There are no upcoming events</p>
   {{ end }}
   </div>
-  <script>
-    const events = document.querySelectorAll('.event');
+
+  <h2>Past Events</h2>
+
+  <div class="events events--past">
+  {{ range sort (where $.Site.Data.events "date_from" "lt" (now.Format "2006-01-02")) "date_from" "desc" }}
+    {{ $dateFrom := time.AsTime .date_from }}
+    {{ $dateTo := time.AsTime .date_to }}
+    <div class="stat event" data-date="{{ $dateFrom.Format "2006-01-02T15:04:05Z07:00" }}">
+        <span>
+        {{ if eq .date_from .date_to }}
+            {{ .date_from }}
+        {{ else }}
+            {{ .date_from }} - {{ .date_to }}
+        {{ end }}
+        </span>
+        <a href="{{ .url }}">{{ .title }}</a>
+    </div>
+  {{ else }}
+    <p>There are no past events</p>
+  {{ end }}
+  </div>
+</section>
+
+<script>
+    const events = document.querySelectorAll('.events--current .event');
     events.forEach(event => {
         const date = new Date(event.dataset.date);
         const now = new Date();
@@ -32,6 +57,5 @@
         }
     });
 </script>
-</section>
 {{ end }}
 
